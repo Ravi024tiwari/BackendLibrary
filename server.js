@@ -11,7 +11,7 @@ import { adminRouter } from "./routes/admin.route.js";
 import cookieParser from "cookie-parser";
 
 
-export const app =express();
+ const app =express();
 
 dotenv.config();//here we configure the dotenv
 
@@ -44,3 +44,5 @@ app.use("/api/v1",bookRouter)
 app.use("/api/v1",statsRouter)
 app.use("/api/v1",transectionRouter)
 app.use("/api/v1",adminRouter)
+
+export default app;
