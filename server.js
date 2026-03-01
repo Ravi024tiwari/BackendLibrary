@@ -33,7 +33,9 @@ app.listen(PORT,()=>{
 })
 
 app.get("/",(req,res)=>{
-    res.json("Backend working properly")
+    res.json({
+        message:"Backend working properly.."
+    })
 })
 
 app.use("/api/v1",authRouter)
